@@ -3,7 +3,7 @@ const test = require('./selenium/test');
 const express = require('express');
 const cors = require('cors');
 
-const PORT = process.env.API_HOST || 'http://localhost:3001';
+const PORT = process.env.API_HOST || 3001;
 
 const app = express();
 
@@ -13,7 +13,6 @@ app.use(cors())
 
 app.listen(PORT, () => {
     console.log('Work')
-    console.log(PORT)
 })
 
 const movieId = [];
