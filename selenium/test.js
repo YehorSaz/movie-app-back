@@ -2,9 +2,14 @@ const {By, Builder, Key} = require('selenium-webdriver');
 require('chromedriver');
 chrome = require('selenium-webdriver/chrome');
 
+Xvfb = require('xvfb');
+xvfb = new Xvfb();
+xvfb.startSync();
+
 module.exports = async function test(id) {
 
     let options = new chrome.Options().headless();
+    options.addArguments('disable-gpu');
 
     let driver = await new Builder().forBrowser('chrome').setChromeOptions(options).build();
     // let driver = await new Builder().forBrowser('chrome').build();
@@ -35,3 +40,4 @@ module.exports = async function test(id) {
 
     // await driver.quit();
 }
+xvfb.stopSync();
