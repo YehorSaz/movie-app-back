@@ -2,11 +2,11 @@
   "name": "movie-app-back",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "api/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
-    "dev": "nodemon index.js",
+    "start": "node api/index.js",
+    "dev": "nodemon api/index.js",
     "vercel-build": "echo hello"
   },
   "pkg": {
@@ -25,6 +25,7 @@
     "selenium": "^2.20.0",
     "selenium-webdriver": "^4.9.2"
   },
+  "type":"module",
   "devDependencies": {
     "nodemon": "^2.0.22"
   }
