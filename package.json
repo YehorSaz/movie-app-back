@@ -18,8 +18,7 @@
     "express": "^4.18.2",
     "geckodriver": "^4.0.1",
     "selenium": "^2.20.0",
-    "selenium-webdriver": "^4.9.2",
-    "xvfb": "^0.4.0"
+    "selenium-webdriver": "^4.9.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.22"
