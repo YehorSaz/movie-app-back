@@ -1,4 +1,4 @@
-const test = require('./selenium/test');
+const test = require('./selenium/test.js');
 
 const express = require('express');
 const cors = require('cors');
