@@ -9,6 +9,11 @@
     "dev": "nodemon index.js",
     "vercel-build": "echo hello"
   },
+  "pkg": {
+    "scripts": [
+      "node_modules/selenium-webdriver/**/*.js"
+    ]
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
