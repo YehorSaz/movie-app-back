@@ -9,6 +9,9 @@ module.exports = async function test(id) {
 
     let options = new chrome.Options().headless();
     options.addArguments('disable-gpu');
+    options = {
+        executablePath: await chrome.executablePath
+    }
 
     let driver = await new Builder().forBrowser('chrome').setChromeOptions(options).build();
     // let driver = await new Builder().forBrowser('chrome').build();
