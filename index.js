@@ -18,7 +18,7 @@ app.listen(PORT, () => {
 const movieId = [];
 app.post('/api', async (req, res) => {
     res.setHeader("access-control-allow-credentials", "false");
-    res.setHeader( "Access-Control-Allow-Origin", "https://my-movie-app-coral.vercel.app");
+    res.setHeader( "Access-Control-Allow-Origin", "*");
 
     movieId[0] = req.body.movieId;
     movieId[1] = await test(movieId[0]);
